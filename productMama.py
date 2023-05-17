@@ -20,5 +20,5 @@ class Product:
 
     def total_sales(self):
        
-        sales = self.price * (self.quantity - sales)
+        sales = self.price * (self.quantity)
         return sales    
