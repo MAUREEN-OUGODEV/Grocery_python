@@ -1,14 +1,23 @@
-lass Order:
+class Order:
    
-    def __init__(self, product_name, quantity, price):
-        self.product_name = product_name
-        self.quantity = quantity
-        self.price = price
-        
-    def add_item(self, product):
-        self.product_name = product.name
-        self.quantity += 1
-        self.price += product.price
+    def __init(self,customer_id,product):
+        self.customer_id = customer_id
+        self.product = product
+        #This attribute is a method for calculating total price of the products added
+        self.total_price = self.calculate_total_price
     
-    def calculate_total_price(self):
-        return self.quantity * self.price
+    def add_product(self,product):
+       self.product.append(product)
+       self.total_price = self.calculate_total_price
+    
+    def remove_product(self,producr):
+        self.product.remove(product)
+        self.total_price = self.calculate_total_price
+    
+    def calculate_total_price(self)
+           total_price = 0
+        for item in self.items:
+            total_price += item.price
+        return total_price
+
+
