@@ -1,9 +1,8 @@
 class Product:
-    def __init__(self,product_name,product_price,quantity,category):
+    def __init__(self,product_name,product_price,quantity):
         self.product_name= product_name
         self.product_price = product_price
         self.quantity = quantity
-        self.category = category
     def item_sold(self, already_sold):
         
         if already_sold > self.quantity:
@@ -20,5 +19,5 @@ class Product:
 
     def total_sales(self):
        
-        sales = self.price * (self.quantity - sales)
+        sales = self.price * (self.quantity)
         return sales    
