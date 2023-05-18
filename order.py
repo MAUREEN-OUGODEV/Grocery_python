@@ -1,6 +1,6 @@
 class Order:
    
-    def __init(self,customer_id,product):
+    def __init__(self,customer_id,product):
         self.customer_id = customer_id
         self.product = product
         #This attribute is a method for calculating total price of the products added
